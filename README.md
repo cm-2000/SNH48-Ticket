@@ -11,3 +11,5 @@
   * 安装[Anaconda](https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/)
 
 2021/05/11
+
+5/18补充说明：可能需要注意网页读秒，以防时间到了8点网页购买链接仍不可点击，导致代码报错
