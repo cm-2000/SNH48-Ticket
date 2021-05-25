@@ -22,7 +22,7 @@ browser.execute_script('arguments[0].click();', determine)
 while True:  # 无限循环
     if click_time > 0:  # 直到点击一次购票
         break
-    if time.strftime("%Y-%m-%d %H:%M:%S",time.localtime()) == '2021-05-11 20:00:00':  # 设置抢票时间
+    if time.strftime("%Y-%m-%d %H:%M:%S",time.localtime()) >= '2021-05-11 20:00:00':  # 设置抢票时间
         determine = browser.find_element_by_xpath('//a[@class="blue_nb_2 ma_r10"]')  # 点击购买
         browser.execute_script('arguments[0].click();', determine)
         click_time += 1  # 退出程序
